@@ -1,18 +1,25 @@
 /* Variables: fonts and colours */
 :root {
-  --primary-font: "Playfair Display", serif;  /* Font-Heading*/   
-  --secondary-font: "Lato", sans-serif;  /* Font-Body */
-  --color-obsidian: #1f1b18;  /* Almost-black */
-  --color-masa: #f6f0e6;   /* Warm off-white */
-  --color-barro: #b5532e;  /* Terracotta clay */
-  --color-nopal: #3e5641;  /* Deep green */
-  --color-maiz: #d9a441;   /* Warm gold */
+    --primary-font: "Playfair Display", serif;
+    /* Font-Heading*/
+    --secondary-font: "Lato", sans-serif;
+    /* Font-Body */
+    --color-obsidian: #1f1b18;
+    /* Almost-black */
+    --color-masa: #f6f0e6;
+    /* Warm off-white */
+    --color-barro: #b5532e;
+    /* Terracotta clay */
+    --color-nopal: #3e5641;
+    /* Deep green */
+    --color-maiz: #d9a441;
+    /* Warm gold */
 }
 
 /* Global styles */
 body {
     font-family: var(--secondary-font);
-   
+
 }
 
 h1,
@@ -28,7 +35,6 @@ h6 {
 /* Navbar */
 .navbar {
     background-color: var(--color-obsidian);
-    
 }
 
 .navbar-brand {
@@ -36,14 +42,38 @@ h6 {
     font-style: italic;
     font-weight: 600;
     color: var(--color-masa);
-} 
+}
 
-.navbar-toggler{
+.navbar-toggler {
     color: var(--color-masa);
 }
+
 .nav-link:hover {
     color: var(--color-maiz);
 }
- .navbar-nav .nav-link.active {
+
+.navbar-nav .nav-link.active {
     color: var(--color-maiz);
- }
+}
+
+/* Media Query for tablets and larger screens */
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media query for desktop and larger screens */
+@media (min-width: 1200px) {
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+}
