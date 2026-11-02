@@ -19,7 +19,8 @@
 /* Global styles */
 body {
     font-family: var(--secondary-font);
-     padding-top: 100px; /*pushes the top of the header down under fixed navbar */ 
+     padding-top: 50px; /*pushes the top of the header down under fixed navbar */ 
+     font-style: italic;
 }
 
 h1,
@@ -39,7 +40,7 @@ h6 {
 
 .navbar-brand {
     font-family: var(--primary-font);
-    font-style: italic;
+    
     font-weight: 600;
     color: var(--color-masa);
 }
@@ -56,6 +57,38 @@ h6 {
     color: var(--color-maiz);
 }
 
+/* Hero */
+.hero-section {
+    background-image:linear-gradient(#2b2521, rgba(31, 27, 20, 0)), url(../images/d-masa-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    color: var(--color-masa);
+}
+
+.hero-heading {
+    font-size: 1.4rem;  
+}
+
+.hero-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+}
+
+.btn-book {
+    background-color: var(--color-barro);
+    color: var(--color-masa);
+    border-color: var(--color-nopal);
+    margin: 24px 0; 
+    transition: ease-in-out 0.3s;  
+}
+.btn-book:hover {
+    font-size: 1.2rem;
+    background-color: var(--color-nopal);
+    color: var(--color-maiz);
+   
+}
 /* Media Query for tablets and larger screens */
 @media (min-width: 768px) {
     .navbar-brand {
