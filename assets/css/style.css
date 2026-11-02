@@ -1,0 +1,49 @@
+/* Variables: fonts and colours */
+:root {
+  --primary-font: "Playfair Display", serif;  /* Font-Heading*/   
+  --secondary-font: "Lato", sans-serif;  /* Font-Body */
+  --color-obsidian: #1f1b18;  /* Almost-black */
+  --color-masa: #f6f0e6;   /* Warm off-white */
+  --color-barro: #b5532e;  /* Terracotta clay */
+  --color-nopal: #3e5641;  /* Deep green */
+  --color-maiz: #d9a441;   /* Warm gold */
+}
+
+/* Global styles */
+body {
+    font-family: var(--secondary-font);
+   
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+    font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-obsidian);
+    
+}
+
+.navbar-brand {
+    font-family: var(--primary-font);
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-masa);
+} 
+
+.navbar-toggler{
+    color: var(--color-masa);
+}
+.nav-link:hover {
+    color: var(--color-maiz);
+}
+ .navbar-nav .nav-link.active {
+    color: var(--color-maiz);
+ }
