@@ -97,7 +97,23 @@ h6 {
     background-position: center;
     padding: 50px 0;
     color: var(--color-obsidian);  
-    box-shadow: 0 8px 30px -11px rgba(31, 27, 24, 04) inset;
+    box-shadow: 0 8px 30px -11px rgba(31, 27, 24, 0.4) inset;
+}
+
+/* Gallery */
+.gallery-img {
+    box-shadow: 0 8px 20px 3px rgba(246, 240, 230, 0.3);
+    border-radius: 6px;
+}
+
+.gallery-heading {
+    padding: 24px 0;
+    color: var(--color-masa);
+}
+
+.gallery-section {
+    background-color: var(--color-obsidian);
+    padding-bottom: 50px;
 }
 
 /* Media Query for tablets and larger screens */
