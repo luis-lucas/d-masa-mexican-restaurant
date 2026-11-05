@@ -97,6 +97,7 @@ h6 {
     background-position: center;
     padding: 50px 0;
     color: var(--color-obsidian);  
+    box-shadow: 0 8px 30px -11px rgba(31, 27, 24, 04) inset;
 }
 
 /* Media Query for tablets and larger screens */
@@ -118,6 +119,14 @@ h6 {
         font-size: 1rem;
         padding: 12px;
     }
+    .intro-text {
+        font-size: 1.2rem;
+        max-width: 75rem;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+        line-height: 1.7;
+        letter-spacing: 0.3px;
+    }
 }
 
 /* Media query for desktop and larger screens */
@@ -138,5 +147,17 @@ h6 {
     .btn-book {
         font-size: 1.5rem;
         padding: 18px;
+    }
+    .intro-heading {
+        font-size: 3.5rem;
+        padding: 2rem;
+    }
+    .intro-text {
+        font-size: 1.5rem;
+        max-width: 75rem;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+        line-height: 1.7;
+        letter-spacing: 0.3px;
     }
 }
