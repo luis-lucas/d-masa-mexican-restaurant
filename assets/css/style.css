@@ -104,6 +104,11 @@ h6 {
 .gallery-img {
     box-shadow: 0 8px 20px 3px rgba(246, 240, 230, 0.3);
     border-radius: 6px;
+     transition: 0.5s ease-in-out;
+}
+.gallery-img:hover {
+    transform: scale(1.02);
+    box-shadow: none;
 }
 
 .gallery-heading {
@@ -175,5 +180,8 @@ h6 {
         padding-bottom: 4rem;
         line-height: 1.7;
         letter-spacing: 0.3px;
+    }
+    .gallery-heading {
+        font-size: 3.5rem;
     }
 }
