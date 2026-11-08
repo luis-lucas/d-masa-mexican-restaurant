@@ -157,6 +157,18 @@ footer {
     transform: scale(1.5)
 }
 
+/* Footer Bottom */
+.footer-bottom {
+    background-color: rgba(31, 27, 24, 0.9);
+    color: var(--color-masa);
+    padding: 12px 0;
+}
+.footer-logo {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family: var(--primary-font);
+}
+
 /* Media Query for tablets and larger screens */
 @media (min-width: 768px) {
     .navbar-brand {
