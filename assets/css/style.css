@@ -121,6 +121,20 @@ h6 {
     padding-bottom: 50px;
 }
 
+/* Footer */
+
+footer {
+    background-color: var(--color-masa);
+}
+.pre-footer address a {
+    color: var(--color-nopal);
+    text-decoration: none;
+
+}
+.pre-footer address a:hover {
+    text-decoration: underline;
+} 
+
 /* Media Query for tablets and larger screens */
 @media (min-width: 768px) {
     .navbar-brand {
