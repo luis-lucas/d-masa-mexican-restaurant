@@ -19,8 +19,9 @@
 /* Global styles */
 body {
     font-family: var(--secondary-font);
-     padding-top: 50px; /*pushes the top of the header down under fixed navbar */ 
-     font-style: italic;
+    padding-top: 50px;
+    /*pushes the top of the header down under fixed navbar */
+    font-style: italic;
 }
 
 h1,
@@ -40,7 +41,7 @@ h6 {
 
 .navbar-brand {
     font-family: var(--primary-font);
-    
+
     font-weight: 600;
     color: var(--color-masa);
 }
@@ -59,7 +60,7 @@ h6 {
 
 /* Hero */
 .hero-section {
-    background-image:linear-gradient(#2b2521, rgba(31, 27, 20, 0)), url(../images/d-masa-hero.jpg);
+    background-image: linear-gradient(#2b2521, rgba(31, 27, 20, 0)), url(../images/d-masa-hero.jpg);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -67,36 +68,38 @@ h6 {
 }
 
 .hero-heading {
-    font-size: 1.4rem;  
+    font-size: 1.4rem;
 }
 
 .hero-text {
     font-size: 0.9rem;
     font-weight: 300;
     letter-spacing: 0.4px;
-    
+
 }
 
 .btn-book {
     background-color: var(--color-barro);
     color: var(--color-masa);
     border-color: var(--color-nopal);
-    margin: 24px 0; 
+    margin: 24px 0;
     transition: ease-in-out 0.3s;
-    border-radius: 12px;  
+    border-radius: 12px;
 }
+
 .btn-book:hover {
     transform: scale(1.05);
     background-color: var(--color-nopal);
-    color: var(--color-maiz); 
+    color: var(--color-maiz);
 }
+
 /* Intro Section */
 .intro-section {
     background-image: url(../images/d-masa-about.jpg);
     background-size: cover;
     background-position: center;
     padding: 50px 0;
-    color: var(--color-obsidian);  
+    color: var(--color-obsidian);
     box-shadow: 0 8px 30px -11px rgba(31, 27, 24, 0.4) inset;
 }
 
@@ -104,8 +107,9 @@ h6 {
 .gallery-img {
     box-shadow: 0 8px 20px 3px rgba(246, 240, 230, 0.3);
     border-radius: 6px;
-     transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
+
 .gallery-img:hover {
     transform: scale(1.02);
     box-shadow: none;
@@ -126,14 +130,32 @@ h6 {
 footer {
     background-color: var(--color-masa);
 }
+
+.pre-footer {
+    padding: 50px 0;
+}
+
 .pre-footer address a {
     color: var(--color-nopal);
     text-decoration: none;
-
 }
+
 .pre-footer address a:hover {
     text-decoration: underline;
-} 
+}
+
+.social-links a {
+    color: var(--color-nopal);
+    text-decoration: none;
+    padding: 0 6px 18px 6px;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+    display: inline-block
+}
+
+.social-links a:hover {
+    transform: scale(1.5)
+}
 
 /* Media Query for tablets and larger screens */
 @media (min-width: 768px) {
@@ -144,16 +166,20 @@ footer {
     .nav-link {
         font-size: 1rem;
     }
+
     .hero-heading {
         font-size: 2rem;
     }
+
     .hero-text {
         font-size: 1.1rem;
     }
+
     .btn-book {
         font-size: 1rem;
         padding: 12px;
     }
+
     .intro-text {
         font-size: 1.2rem;
         max-width: 75rem;
@@ -173,20 +199,25 @@ footer {
     .nav-link {
         font-size: 1.5rem;
     }
+
     .hero-heading {
         font-size: 3rem;
     }
+
     .hero-text {
         font-size: 1.4rem;
     }
+
     .btn-book {
         font-size: 1.5rem;
         padding: 18px;
     }
+
     .intro-heading {
         font-size: 3.5rem;
         padding: 2rem;
     }
+
     .intro-text {
         font-size: 1.5rem;
         max-width: 75rem;
@@ -195,6 +226,7 @@ footer {
         line-height: 1.7;
         letter-spacing: 0.3px;
     }
+
     .gallery-heading {
         font-size: 3.5rem;
     }
