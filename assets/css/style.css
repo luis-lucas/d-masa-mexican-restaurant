@@ -14,6 +14,8 @@
     /* Deep green */
     --color-maiz: #d9a441;
     /* Warm gold */
+    --color-masa-dark: #ECE3D4;
+    /* Warmer off-white */
 }
 
 /* Global styles */
@@ -181,6 +183,31 @@ footer {
 .hero-menu-text {
     font-weight: 400;
     font-style: italic;
+}
+
+/* Serving Times */
+.serving-times {
+    background-image: url(../images/serving-times-2.jpg);
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-masa);
+    box-shadow: 0 8px 20px 3px rgba(246, 240, 230, 0.3) inset;
+}
+/* Menu Card */
+.menu-card {
+    background-color: var(--color-masa-dark);
+    border: 2px solid var(--color-nopal);
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(31, 27, 24, 0.15);
+}
+.menu-card h3 {
+    padding-bottom: 30px;
+}
+.food-menu {
+    scroll-margin-top: 50px;
 }
 
 /* Media Query for tablets and larger screens */
