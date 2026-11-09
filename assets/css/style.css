@@ -35,7 +35,7 @@ h6 {
 }
 
 .section-shadow {
-   box-shadow: 0 8px 30px -11px rgba(31, 27, 24, 0.4) inset;
+    box-shadow: 0 8px 30px -11px rgba(31, 27, 24, 0.4) inset;
 }
 
 /* Navbar */
@@ -45,7 +45,6 @@ h6 {
 
 .navbar-brand {
     font-family: var(--primary-font);
-
     font-weight: 600;
     color: var(--color-masa);
 }
@@ -166,10 +165,24 @@ footer {
     color: var(--color-masa);
     padding: 12px 0;
 }
+
 .footer-logo {
     font-size: 1.4rem;
     font-style: italic;
     font-family: var(--primary-font);
+}
+
+/* Food-Menu-Hero */
+.hero-menu {
+    background-image: linear-gradient(rgba(253, 250, 250, 0.5), rgba(255, 251, 251, 0.5)), url('../images/hero-menu-2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    color: var(--color-obsidian);
+}
+.menu-hero-text {
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* Media Query for tablets and larger screens */
