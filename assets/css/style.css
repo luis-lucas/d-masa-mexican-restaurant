@@ -215,6 +215,15 @@ footer {
     width: 70%;
    margin: 15px auto;
 }
+
+/* Booking Section */
+.booking-section {
+    padding-top: 50px;
+    background-image: url(../images/d-masa-about.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
 /* Media Query for tablets and larger screens */
 @media (min-width: 768px) {
     .navbar-brand {

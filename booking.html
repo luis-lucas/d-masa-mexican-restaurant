@@ -48,7 +48,7 @@
                                 <a class="nav-link" href="food-menu.html">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Book a Table</a>
+                                <a class="nav-link active" aria-current="page" href="booking.html">Book a Table</a>
                             </li>
 
                         </ul>
@@ -70,19 +70,38 @@
                     details below—we look forward to welcoming you.</p>
                 <form action="">
                   <div class="row">
-                <div class="col-12 col-lg-6 mb-3"><label for="" class="form-label"></label><input type="text"
-                        class="form-control"></div>
-                <div class="col-12 col-lg-6 mb-3"><label for="" class="form-label"></label><input type="text"
-                        class="form-control"></div>
-                <div class="col-12 col-lg-6 mb-3"><label for="" class="form-label"></label><input type="text"
-                        class="form-control"></div>
-                <div class="col-12 col-lg-6 mb-3"><label for="" class="form-label"></label><input type="text"
-                        class="form-control"></div>
-                <div class="col-12 col-lg-6 mb-3"><label for="" class="form-label"></label><input type="text"
-                        class="form-control"></div>
-                <div class="col-12 col-lg-6 mb-3"><label for="" class="form-label"></label><input type="text"
-                        class="form-control"></div>
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input id="name" name="name" type="text" class="form-control" required>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" type="email" class="form-control" required>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" class="form-control" required>
+                    </div>
+                     <div class="col-12 col-lg-6 mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input id="date" name="date" type="date" class="form-control" required>
+                    </div>
+                     <div class="col-12 col-lg-6 mb-3">
+                        <label for="time" class="form-label">Time</label>
+                        <input id="time" name="time" type="time" class="form-control" required>
+                    </div>
+                     <div class="col-12 col-lg-6 mb-3">
+                        <label for="guests" class="form-label">Number of Guests</label>
+                        <input id="guests" name="guests" type="number" min="1" max="12" class="form-control" required>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="special" class="form-label">Allergies or special requests (optional)</label>
+                        <textarea name="special" id="special" class="form-control" rows="4" maxlength="300"></textarea>
+                    </div>            
             </div>
+                            <div class="text-center">
+                            <button type="submit" class="btn btn-book">Confirm Booking</button>
+                            </div>
                 </form>
                 </div>
             </div>
