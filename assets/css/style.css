@@ -195,7 +195,7 @@ footer {
     box-shadow: 0 8px 20px 3px rgba(246, 240, 230, 0.3) inset;
 }
 /* Menu Card */
-.menu-card {
+.paper-card {
     background-color: var(--color-masa-dark);
     border: 2px solid var(--color-nopal);
     border-radius: 16px;
@@ -203,13 +203,13 @@ footer {
     margin: 20px 0;
     box-shadow: 0 8px 20px rgba(31, 27, 24, 0.15);
 }
-.menu-card h3 {
+.paper-card h3 {
     padding-bottom: 30px;
 }
 .food-menu {
     scroll-margin-top: 50px;
 }
-.menu-card hr {
+.paper-card hr {
     border-top: 3px solid var(--color-maiz);
     opacity: 1;
     width: 70%;
