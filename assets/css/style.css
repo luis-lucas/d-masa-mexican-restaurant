@@ -209,7 +209,12 @@ footer {
 .food-menu {
     scroll-margin-top: 50px;
 }
-
+.menu-card hr {
+    border-top: 3px solid var(--color-maiz);
+    opacity: 1;
+    width: 70%;
+   margin: 15px auto;
+}
 /* Media Query for tablets and larger screens */
 @media (min-width: 768px) {
     .navbar-brand {
