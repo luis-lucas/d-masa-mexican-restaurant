@@ -25,7 +25,13 @@ body {
     /*pushes the top of the header down under fixed navbar */
     font-style: italic;
 }
-
+/* Smooth scrolling for in-page links, only for users who haven't asked to reduce motion.
+   Suggested by Claude (Anthropic's AI assistant) during development. */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
 h1,
 h2,
 h3,
@@ -214,6 +220,14 @@ footer {
     opacity: 1;
     width: 70%;
    margin: 15px auto;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2px;
+    right: 5px;
+    color: var(--color-nopal);
+    font-size: 40px;
+    z-index: 1000;
 }
 
 /* Booking Section */
