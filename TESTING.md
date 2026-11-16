@@ -112,3 +112,51 @@ I tested the live site in the following browsers, clicking through every page, l
 > **Note:** The structure and formatting of the testing tables in this document were drafted with help from Claude (Anthropic's AI assistant). All testing was carried out by me, and every result was checked against the live site.
 
 ## Bugs
+- **Bug: “Book a Table” button shrinks on hover on large screens** Expected: the button grows slightly when the user hovers over it, on all screen sizes.
+Testing: hovered over the button at mobile, tablet, laptop and desktop sizes.
+Result: on mobile and tablet it grew as expected, but on screens 1200px and wider it got smaller. This happened because the hover rule set a fixed font-size: 1.2rem, while the media query for large screens set the button to 1.5rem, so hovering reduced its size.
+Fix: replaced font-size in the hover rule with transform: scale(1.05), which grows the button to 105% of its current size. This works at every screen size and gives a smoother animation, because it doesn’t push the surrounding content around.
+
+- **Bug: Inset shadow on gallery images not visible on hover** Expected: on hover, the gallery image’s cream glow is replaced by a soft inset shadow.
+Testing: hovered over each gallery image at mobile, tablet and desktop sizes, and inspected the styles in Chrome DevTools.
+Result: the glow disappeared as intended, but the inset shadow never appeared. Inset shadows are drawn inside an element’s box, and on an <img> the picture itself covers that area, so the shadow is hidden behind it.
+Fix: replaced the inset shadow with box-shadow: none;, which gives the same visual result with simpler, clearer code. The transition value was also reordered to 0.5s ease-in-out to follow the common convention (duration before timing function) and improve readability.
+> **Note:** these changes were suggested by Claude (Anthropic’s AI assistant) during a code review, based on CSS standards and readability. The code itself was written by me.
+
+- **Bug: Booking page heading hidden behind the navbar on desktop** Expected: the “Join Our Table” heading is fully visible below the navbar when the page loads.
+Testing: opened the booking page at mobile, tablet and desktop sizes.
+Result: on desktop, the navbar overlapped the top of the heading. This happened because the navbar uses Bootstrap’s fixed-top class, so it floats above the page content instead of pushing it down. The other pages weren’t affected, because their hero sections have space at the top.
+Fix: added padding-top to .booking-section, so the content starts below the navbar. Checked at all screen sizes to make sure the heading is visible on each.
+
+- **Bug: Booking form fields accepted any input** Expected: each field only accepts sensible information before the booking can be sent.
+Testing: entered invalid data into each field (numbers in the name, letters in the phone number, very short entries, times outside opening hours, and unrealistic dates such as the year 1362), then clicked “Confirm Booking”.
+Result: the form accepted almost anything. type="tel" does not check the content of a phone number, the name field accepted numbers, any time of day could be booked, and the date field accepted any year.
+Fix:
+Full name: added a pattern allowing only letters (including accented letters), spaces, apostrophes and hyphens, between 2 and 50 characters, with a title explaining the rule.
+Phone number: added a pattern allowing only digits, spaces and the + sign, between 10 and 15 characters, with a title showing an example format.
+Time: added min and max so bookings can only be made within the restaurant’s hours, plus a helper text under the field showing Sunday’s hours.
+Date: added a fixed min and max date range, so bookings can’t be made for unrealistic years or too far in the future.
+Retested every field with invalid and valid data to confirm the browser now blocks invalid entries and shows the correct message.
+ 
+- **Bug: HTML validator error on the navbar’s offcanvas menu** Expected: all pages pass the W3C HTML validator with no errors.
+Testing: ran each page through the W3C Markup Validation Service.
+Result: the validator flagged an error: the aria-labelledby attribute isn’t allowed on a div without a suitable role. This came from the Bootstrap offcanvas navbar example code.
+Fix: added role="dialog" to the offcanvas div, which describes it correctly for screen readers as a panel that opens over the page. Fixed on all four pages and revalidated with no errors.
+
+- **Bug: “Book a Table” link broken in the Menu page navbar** Expected: the “Book a Table” navbar link on the Menu page takes the user to the booking page.
+Testing: ran the Menu page through the W3C HTML validator.
+Result: the validator showed three errors on the same line, caused by a missing closing quote after class="nav-link. This merged the class and href attributes, so the link didn’t work properly.
+Fix: added the missing quote (class="nav-link"), revalidated with no errors, and tested the link on the live site.
+
+- **Bug: Heading levels skipped on the booking page** Expected: headings follow a logical order (h1 → h2 → h3), so screen reader users can understand the page structure.
+Testing: ran the booking page through the W3C HTML validator.
+Result: the validator flagged an error: the page went from the h1 straight to the h3 headings in the pre-footer, because it had no h2.
+Fix: added an h2 (“Your Booking Details”) above the form fields, which also introduces the form for customers. Revalidated with no errors.
+
+Bugs found by the HTML validator and Lighthouse are described in the [Validators](#validators) and [Lighthouse](#lighthouse) sections above.
+
+### Unfixed Bugs
+
+- **Known limitations (unfixed)** Past dates: the date range is fixed, so it doesn’t move forward automatically with today’s date, and over time it will allow some past dates. Keeping it up to date would require JavaScript, which is outside the scope of this HTML and CSS project.
+Different opening hours per day: HTML can only set one min and max time for all days, so the time field cannot apply Sunday’s shorter hours automatically. A helper text informs customers of Sunday’s hours instead. This could be fixed with JavaScript in future. In a real restaurant, staff would also check each booking before confirming it by email.
+Name pattern trade-off: blocking numbers and symbols prevents obvious mistakes, but real names worldwide can include characters outside this pattern (for example, names in non-Latin alphabets). In a real product, a more relaxed rule would be safer.
