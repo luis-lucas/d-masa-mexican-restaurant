@@ -224,6 +224,11 @@ footer {
     background-position: center;
     padding-bottom: 50px;
 }
+
+/* Booking Success */
+.success-sub-heading {
+    font-size: 1.1rem;
+}
 /* Media Query for tablets and larger screens */
 @media (min-width: 768px) {
     .navbar-brand {
