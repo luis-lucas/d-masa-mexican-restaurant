@@ -228,6 +228,11 @@ footer {
     color: var(--color-nopal);
     font-size: 40px;
     z-index: 1000;
+    transition: ease-in-out;
+}
+.back-to-top:hover {
+    transform: scale(1.05);
+    color: var(--color-barro);
 }
 
 /* Booking Section */
