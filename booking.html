@@ -65,44 +65,47 @@
         <section class="booking-section">
             <div class="container">
                 <div class="paper-card">
-                <h1>Join Our Table</h1>
-                <p>Experience contemporary Mexican cooking crafted from scratch at D'Masa. Complete your reservation
-                    details below—we look forward to welcoming you.</p>
-                <form action="booking-success.html">
-                  <div class="row">
-                    <div class="col-12 col-lg-6 mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input id="name" name="name" type="text" class="form-control" required>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input id="email" name="email" type="email" class="form-control" required>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input id="phone" name="phone" type="tel" class="form-control" required>
-                    </div>
-                     <div class="col-12 col-lg-6 mb-3">
-                        <label for="date" class="form-label">Date</label>
-                        <input id="date" name="date" type="date" class="form-control" required>
-                    </div>
-                     <div class="col-12 col-lg-6 mb-3">
-                        <label for="time" class="form-label">Time</label>
-                        <input id="time" name="time" type="time" class="form-control" required>
-                    </div>
-                     <div class="col-12 col-lg-6 mb-3">
-                        <label for="guests" class="form-label">Number of Guests</label>
-                        <input id="guests" name="guests" type="number" min="1" max="12" class="form-control" required>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="special" class="form-label">Allergies or special requests (optional)</label>
-                        <textarea name="special" id="special" class="form-control" rows="4" maxlength="300"></textarea>
-                    </div>            
-            </div>
-                            <div class="text-center">
-                            <button type="submit" class="btn btn-book">Confirm Booking</button>
+                    <h1>Join Our Table</h1>
+                    <p>Experience contemporary Mexican cooking crafted from scratch at D'Masa. Complete your reservation
+                        details below—we look forward to welcoming you.</p>
+                    <form action="booking-success.html">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input id="name" name="name" type="text" class="form-control" pattern="[A-Za-zÀ-ÿ' \-]{2,50}" title="Please use letters only" required>
                             </div>
-                </form>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input id="email" name="email" type="email" class="form-control" required>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input id="phone" name="phone" type="tel" class="form-control" pattern="[0-9 +]{10,15}" title="Please enter a valid phone number, e.g. 01632 960123" required>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="date" class="form-label">Date</label>
+                                <input id="date" name="date" type="date" class="form-control" min="2026-11-16" max="2026-12-23" required>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="time" class="form-label">Time</label>
+                                <input id="time" name="time" type="time" class="form-control" min="09:00" max="22:00" required>
+                                <div class="form-text">Sunday bookings: 10:00 – 19:00.</div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="guests" class="form-label">Number of Guests</label>
+                                <input id="guests" name="guests" type="number" min="1" max="12" class="form-control"
+                                    required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="special" class="form-label">Allergies or special requests (optional)</label>
+                                <textarea name="special" id="special" class="form-control" rows="4"
+                                    maxlength="300"></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-book">Confirm Booking</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
