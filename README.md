@@ -66,3 +66,45 @@ All colours were checked for contrast to meet accessibility guidelines (see [TES
 ![Home page wireframes](docs/wireframes/success-page-wireframe.png)
 
 The final site follows these wireframes closely. A few changes were made during development: the mobile menu was changed from a dropdown to a side panel (offcanvas) for a cleaner look, and the Booking and Success page wireframes were finalised during development, as the form layout evolved while building.
+
+## Features
+
+### Navigation Bar
+A fixed navbar on every page, with links to Home, Menu and Book a Table. The current page is highlighted in gold. On mobile, the links are in a side menu opened by a burger icon.
+
+![D'Masa navbar showing the Home, Menu and Book a Table links](docs/readme/feature-navbar.png)
+
+### Hero Section
+A full-width image of a rustic Mexican kitchen, with the restaurant's message and a Book a Table button, so new users immediately understand what D'Masa is.
+
+![Home page hero with heading and Book a Table button](docs/readme/feature-hero.png)
+
+### Gallery
+Six photos showing the food and the atmosphere of the restaurant, with a gentle hover effect.
+
+![Gallery of six photos of D'Masa's dishes and dining room](docs/readme/feature-gallery.png)
+
+### Pre-footer and Footer
+Opening times, address, phone, email, directions and social media links, on every page where customers are planning their visit.
+
+![Pre-footer with opening times, contact details and social links](docs/readme/feature-prefooter.png)
+
+### Menu Page
+A banner with buttons that jump straight to the Monday–Saturday or Sunday menu, the serving times, and the menus presented on paper-style cards, with allergens listed for each dish. A back to top button helps users on this long page.
+
+![Menu page with dishes on a paper-style card](docs/readme/feature-menu.png)
+
+### Booking Form
+A form that checks every field before sending, so customers can't book with missing or incorrect details.
+
+![Booking form with name, email, phone, date, time and guests fields](docs/readme/feature-booking.png)
+
+### Success Page
+A confirmation message after booking, with a button back to the Home page.
+
+![Booking confirmation message on the Success page](docs/readme/feature-success.png)
+
+### Future Features
+- A drinks menu and dessert menu
+- A customer reviews section
+- **Automatic booking dates and times:** the date field currently only allows bookings from 16/11/2026, and this doesn't update by itself. Using JavaScript, the earliest date could update to today's date automatically, and the time field could follow each day's opening hours.
