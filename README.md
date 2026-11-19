@@ -108,3 +108,23 @@ A confirmation message after booking, with a button back to the Home page.
 - A drinks menu and dessert menu
 - A customer reviews section
 - **Automatic booking dates and times:** the date field currently only allows bookings from 16/11/2026, and this doesn't update by itself. Using JavaScript, the earliest date could update to today's date automatically, and the time field could follow each day's opening hours.
+
+## Technologies Used
+
+### Languages
+- HTML5
+- CSS3
+
+### Frameworks, Libraries and Tools
+- [Bootstrap 5.3](https://getbootstrap.com/) for the responsive layout, navbar and form styling
+- [Font Awesome](https://fontawesome.com/) for the social media and back to top icons
+- [Google Fonts](https://fonts.google.com/) for the Playfair Display and Lato fonts
+- [Git](https://git-scm.com/) for version control
+- [GitHub](https://github.com/) to store the code
+- [GitHub Pages](https://pages.github.com/) to host the live site
+- [Visual Studio Code](https://code.visualstudio.com/) as the code editor
+- [Excalidraw](https://excalidraw.com/) for the wireframes
+- [favicon.io](https://favicon.io/) to create the favicon
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) and Lighthouse for testing
+- [Claude](https://claude.ai/) (Anthropic's AI assistant) as a learning assistant for code review, debugging and spelling
+- Artistly AI to generate the photos and background patterns
