@@ -128,3 +128,40 @@ A confirmation message after booking, with a button back to the Home page.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) and Lighthouse for testing
 - [Claude](https://claude.ai/) (Anthropic's AI assistant) as a learning assistant for code review, debugging and spelling
 - Artistly AI to generate the photos and background patterns
+
+## Deployment
+
+### Deploying to GitHub Pages
+
+The site was deployed to GitHub Pages using these steps:
+
+1. In the GitHub repository, click the **Settings** tab.
+2. In the left menu, click **Pages**.
+3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+4. Under **Branch**, select **main** and the **/ (root)** folder, then click **Save**.
+5. After a minute or two, refresh the page. A link to the live site appears at the top.
+
+The live site can be found here: [D'Masa](https://luis-lucas.github.io/d-masa-mexican-restaurant/)
+
+After deployment, the live site was tested to make sure it matches the development version (see [TESTING.md](TESTING.md)).
+
+### Running the Project Locally
+
+To make a copy of this project on your own computer:
+
+1. Go to the [GitHub repository](https://github.com/luis-lucas/d-masa-mexican-restaurant).
+2. Click the green **Code** button, and copy the **HTTPS** link.
+3. Open a terminal, and go to the folder where you want to save the project.
+4. Type `git clone` followed by the link you copied, and press **Enter**:
+
+   `git clone https://github.com/luis-lucas/d-masa-mexican-restaurant.git`
+
+5. Open the project folder in your code editor, and open `index.html` in a browser (or use an extension like Live Server) to view the site.
+
+### Forking the Repository
+
+To make your own copy of the repository on GitHub, without affecting the original:
+
+1. Go to the [GitHub repository](https://github.com/luis-lucas/d-masa-mexican-restaurant).
+2. Click the **Fork** button in the top right corner.
+3. A copy of the repository will be created in your own GitHub account.
