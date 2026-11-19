@@ -165,3 +165,26 @@ To make your own copy of the repository on GitHub, without affecting the origina
 1. Go to the [GitHub repository](https://github.com/luis-lucas/d-masa-mexican-restaurant).
 2. Click the **Fork** button in the top right corner.
 3. A copy of the repository will be created in your own GitHub account.
+
+## Credits
+
+### Code
+- The navbar was adapted from the [Bootstrap offcanvas navbar example](https://getbootstrap.com/docs/5.3/components/navbar/#offcanvas).
+- The layout, grid and form styles use [Bootstrap 5.3](https://getbootstrap.com/) classes.
+- The Code Institute walkthrough projects (Love Running and Boardwalk Games) were used as a reference for the page structure and form layout.
+- The "Get directions" link uses the [Google Maps URLs](https://developers.google.com/maps/documentation/urls/get-started) format.
+- The smooth scrolling code (with reduced motion support) was suggested by Claude.
+- [Claude](https://claude.ai/) (Anthropic's AI assistant) was used as a learning assistant throughout the project, for code review, debugging, spelling checks and help with formatting the documentation. All code was written by me, and suggested changes are noted in the code comments and in [TESTING.md](TESTING.md).
+
+### Content
+- All text and menu dishes were written by me, based on my experience as a chef.
+- The phone number uses a UK [Ofcom drama number](https://www.ofcom.org.uk/phones-and-broadband/phone-numbers/numbers-for-drama), so it can't belong to a real person. The email address uses the reserved `.example` domain for the same reason.
+
+### Media
+- All photos and background patterns were generated with Artistly AI.
+- Icons are from [Font Awesome](https://fontawesome.com/).
+- Fonts are from [Google Fonts](https://fonts.google.com/).
+- The favicon was created with [favicon.io](https://favicon.io/).
+
+### Acknowledgements
+- Code Institute, for the course materials and support.
