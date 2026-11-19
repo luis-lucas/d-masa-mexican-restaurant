@@ -1,7 +1,6 @@
 # D'Masa | Modern Mexican Restaurant
-Static website for D’Masa, a modern Mexican restaurant. Built with HTML, CSS and Bootstrap.
 
-# D'Masa | Modern Mexican Restaurant
+Static website for D’Masa, a modern Mexican restaurant. Built with HTML, CSS and Bootstrap.
 
 [View the live site here](https://luis-lucas.github.io/d-masa-mexican-restaurant/)
 
@@ -11,7 +10,7 @@ This website gives users a small window into the everyday Mexican food experienc
 
 For the site owner, the website is designed to turn visits into bookings. The user experience follows a natural flow, so booking a table never feels like a forced decision, but rather an opportunity: more convenience for the customer, and more bookings for the restaurant.
 
-## UX / Design
+# UX / Design
 
 ## User Stories
 
@@ -67,7 +66,7 @@ All colours were checked for contrast to meet accessibility guidelines (see [TES
 
 The final site follows these wireframes closely. A few changes were made during development: the mobile menu was changed from a dropdown to a side panel (offcanvas) for a cleaner look, and the Booking and Success page wireframes were finalised during development, as the form layout evolved while building.
 
-## Features
+# Features
 
 ### Navigation Bar
 A fixed navbar on every page, with links to Home, Menu and Book a Table. The current page is highlighted in gold. On mobile, the links are in a side menu opened by a burger icon.
@@ -109,7 +108,7 @@ A confirmation message after booking, with a button back to the Home page.
 - A customer reviews section
 - **Automatic booking dates and times:** the date field currently only allows bookings from 16/11/2026, and this doesn't update by itself. Using JavaScript, the earliest date could update to today's date automatically, and the time field could follow each day's opening hours.
 
-## Technologies Used
+# Technologies Used
 
 ### Languages
 - HTML5
@@ -166,7 +165,7 @@ To make your own copy of the repository on GitHub, without affecting the origina
 2. Click the **Fork** button in the top right corner.
 3. A copy of the repository will be created in your own GitHub account.
 
-## Credits
+# Credits
 
 ### Code
 - The navbar was adapted from the [Bootstrap offcanvas navbar example](https://getbootstrap.com/docs/5.3/components/navbar/#offcanvas).
