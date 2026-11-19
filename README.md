@@ -56,6 +56,9 @@ All colours were checked for contrast to meet accessibility guidelines (see [TES
 - **Reusable elements:** styles like the Book a Table button (`.btn-book`), the paper card (`.paper-card`) and the section shadow (`.section-shadow`) are reused across the site, so it feels connected page by page, like a single website rather than a collection of separate pages.
 - **Pre-footer and bottom footer:** the footer is split into two parts, which gives flexibility when developing, improving or extending the site.
 
+- **No pre-footer on the Success page:** customers on this page have already booked, so it only has the small footer, keeping the page clean and uncluttered.
+- **No Book a Table button in the Booking page's pre-footer:** since the user is already on the booking page, the button would only reload the same page, so it was removed to keep the focus on the form.
+
 ### Wireframes
 
 ![Home page wireframes](docs/wireframes/home-wireframes.png)
